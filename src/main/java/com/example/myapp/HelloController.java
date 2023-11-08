@@ -40,7 +40,7 @@ import java.time.ZoneId;
 public class HelloController extends Application {
     private Connection conn;
     private TableView<UserData> tableView;
-
+    private Stage primaryStage;
     public static void main(String[] args) {
         launch(args);
     }
@@ -48,6 +48,7 @@ public class HelloController extends Application {
     @Override
     public void start(Stage primaryStage) {
         // Load database properties from the file
+        this.primaryStage = primaryStage;
         Properties properties = loadDatabaseProperties();
 
         // Connect to the database using the loaded properties
@@ -639,6 +640,9 @@ public class HelloController extends Application {
         tab4.setContent(tab4Layout);
 
         return tab4;
+    }
+    public void show(Stage stage) {
+        this.start(stage); // You can call the start method to display the HelloController view
     }
 
 }

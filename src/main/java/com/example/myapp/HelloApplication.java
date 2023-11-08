@@ -60,7 +60,7 @@ public class HelloApplication extends Application {
                     messageLabel.setText("Login successful!");
 
                     // Open HelloController upon successful login
-                    openHelloController();
+                    showHelloController();// openHelloController();
                 } else {
                     messageLabel.setText("Login failed. Incorrect password.");
                 }
@@ -95,10 +95,15 @@ public class HelloApplication extends Application {
         return null;
     }
 
-    private void openHelloController() {
+   /* private void openHelloController() {
         HelloController helloController = new HelloController();
         helloController.start(primaryStage);
-    }
+    }*/
+   private void showHelloController() {
+       HelloController helloController = new HelloController();
+       helloController.start(primaryStage);
+   }
+
 
     private void loadDatabaseProperties() {
         databaseProperties = new Properties();
