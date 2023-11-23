@@ -1,5 +1,6 @@
 package com.example.myapp;
 import javafx.application.Application;
+import javafx.stage.Stage;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -41,9 +42,9 @@ public class HelloController extends Application {
     private Connection conn;
     private TableView<UserData> tableView;
     private Stage primaryStage;
-    public static void main(String[] args) {
-        launch(args);
-    }
+  // public static void main(String[] args) {
+    //    launch(args);
+    //}
 
     @Override
     public void start(Stage primaryStage) {

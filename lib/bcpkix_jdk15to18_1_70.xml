@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bcpkix-jdk15to18-1.70">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/bcpkix-jdk15to18-1.70.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
